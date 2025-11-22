@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: customers
+      - name: regions
+      - name: categories
+      - name: products
+      - name: orders
+      - name: order_items
+      - name: payments
+      - name: shipping

@@ -1,0 +1,90 @@
+[0m16:43:37.190095 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x759c203f86d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x759c202b8790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x759c1f333ee0>]}
+
+
+============================== 16:43:37.193714 | 2f161a8e-7cdf-4079-b6a8-44dee1e3cffa ==============================
+[0m16:43:37.193714 [info ] [MainThread]: Running with dbt=1.10.15
+[0m16:43:37.194171 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'fail_fast': 'False', 'version_check': 'True', 'write_json': 'True', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'introspect': 'True', 'warn_error': 'None', 'use_colors': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'debug': 'False', 'profiles_dir': '/home/habiba/.dbt', 'quiet': 'False', 'invocation_command': 'dbt init dbt_task', 'log_path': 'logs', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'partial_parse': 'True', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True'}
+[0m16:43:37.207769 [info ] [MainThread]: Creating dbt configuration folder at /home/habiba/.dbt
+[0m16:43:37.210174 [debug] [MainThread]: Starter project path: /home/habiba/dbt_project/dbt-env/lib/python3.10/site-packages/dbt/include/starter_project
+[0m16:43:37.216910 [info ] [MainThread]: 
+Your new dbt project "dbt_task" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:43:37.217440 [info ] [MainThread]: Setting up your profile.
+[0m16:48:42.295073 [info ] [MainThread]: Profile dbt_task written to /home/habiba/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m16:48:42.300282 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 323.41547, "process_in_blocks": "68112", "process_kernel_time": 0.125447, "process_mem_max_rss": "98476", "process_out_blocks": "80", "process_user_time": 0.878131}
+[0m16:48:42.300961 [debug] [MainThread]: Command `dbt init` succeeded at 16:48:42.300824 after 323.42 seconds
+[0m16:48:42.301637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x759c203f86d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x759c202b8790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x759c1f384d30>]}
+[0m16:48:42.302083 [debug] [MainThread]: Flushing usage events
+[0m16:48:41.557398 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:50:08.468594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73a5983d8640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73a59823a050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73a597315d50>]}
+
+
+============================== 16:50:08.471779 | b0e57c56-7932-46d6-b101-fdb2dd4b6a95 ==============================
+[0m16:50:08.471779 [info ] [MainThread]: Running with dbt=1.10.15
+[0m16:50:08.472269 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'static_parser': 'True', 'empty': 'None', 'log_format': 'default', 'log_path': 'logs', 'version_check': 'True', 'introspect': 'True', 'printer_width': '80', 'warn_error': 'None', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'profiles_dir': '/home/habiba/.dbt', 'debug': 'False', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'write_json': 'True', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'no_print': 'None', 'use_colors': 'True', 'cache_selected_only': 'False', 'use_experimental_parser': 'False'}
+[0m16:50:08.483814 [info ] [MainThread]: dbt version: 1.10.15
+[0m16:50:08.484288 [info ] [MainThread]: python version: 3.10.12
+[0m16:50:08.484628 [info ] [MainThread]: python path: /home/habiba/dbt_project/dbt-env/bin/python3
+[0m16:50:08.484908 [info ] [MainThread]: os info: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m16:50:08.530341 [info ] [MainThread]: Using profiles dir at /home/habiba/.dbt
+[0m16:50:08.530812 [info ] [MainThread]: Using profiles.yml file at /home/habiba/.dbt/profiles.yml
+[0m16:50:08.531118 [info ] [MainThread]: Using dbt_project.yml file at /home/habiba/dbt_project/dbt_project.yml
+[0m16:50:08.531921 [info ] [MainThread]: adapter type: postgres
+[0m16:50:08.532224 [info ] [MainThread]: adapter version: 1.9.1
+[0m16:50:08.532481 [info ] [MainThread]: Configuration:
+[0m16:50:08.532731 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:50:08.532950 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:50:08.533161 [info ] [MainThread]: Required dependencies:
+[0m16:50:08.533418 [debug] [MainThread]: Executing "git --help"
+[0m16:50:08.540458 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:50:08.540888 [debug] [MainThread]: STDERR: "b''"
+[0m16:50:08.541150 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:50:08.541409 [info ] [MainThread]: Connection:
+[0m16:50:08.541657 [info ] [MainThread]:   host: localhost
+[0m16:50:08.541913 [info ] [MainThread]:   port: 5432
+[0m16:50:08.542145 [info ] [MainThread]:   user: admin
+[0m16:50:08.542388 [info ] [MainThread]:   database: dbt_ecommerce_db
+[0m16:50:08.542606 [info ] [MainThread]:   schema: raw
+[0m16:50:08.542819 [info ] [MainThread]:   connect_timeout: 10
+[0m16:50:08.543032 [info ] [MainThread]:   role: None
+[0m16:50:08.543246 [info ] [MainThread]:   search_path: None
+[0m16:50:08.543472 [info ] [MainThread]:   keepalives_idle: 0
+[0m16:50:08.543720 [info ] [MainThread]:   sslmode: None
+[0m16:50:08.543943 [info ] [MainThread]:   sslcert: None
+[0m16:50:08.544167 [info ] [MainThread]:   sslkey: None
+[0m16:50:08.544408 [info ] [MainThread]:   sslrootcert: None
+[0m16:50:08.544631 [info ] [MainThread]:   application_name: dbt
+[0m16:50:08.544843 [info ] [MainThread]:   retries: 1
+[0m16:50:08.545213 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m16:50:08.590128 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m16:50:08.612071 [debug] [MainThread]: Using postgres connection "debug"
+[0m16:50:08.612483 [debug] [MainThread]: On debug: select 1 as id
+[0m16:50:08.612778 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:50:08.632278 [debug] [MainThread]: SQL status: SELECT 1 in 0.019 seconds
+[0m16:50:08.633191 [debug] [MainThread]: On debug: Close
+[0m16:50:08.633585 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:50:08.633955 [info ] [MainThread]: [31m1 check failed:[0m
+[0m16:50:08.634283 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/habiba/dbt_project/dbt_project.yml> not found
+
+[0m16:50:08.635028 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.20752126, "process_in_blocks": "53504", "process_kernel_time": 0.197291, "process_mem_max_rss": "108704", "process_out_blocks": "32", "process_user_time": 0.912958}
+[0m16:50:08.635446 [debug] [MainThread]: Command `dbt debug` failed at 16:50:08.635353 after 0.21 seconds
+[0m16:50:08.635785 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:50:08.636088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73a5983d8640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73a5972aa650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73a5972a9b10>]}
+[0m16:50:08.636404 [debug] [MainThread]: Flushing usage events
+[0m16:50:09.399653 [debug] [MainThread]: An error was encountered while trying to flush usage events

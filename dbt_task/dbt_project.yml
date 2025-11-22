@@ -1,0 +1,30 @@
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: 'dbt_ecommerce'
+version: '1.0.0'
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'dbt_task'
+
+# These configurations specify where dbt should look for different types of files.
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+# Configuring models with schemas
+models:
+  dbt_ecommerce:
+    staging:           # models in this folder go to staging schema
+      +schema: staging
+      +materialized: view   # staging models are views by default
+    marts:             # models in this folder go to analytics schema
+      +schema: analytics
+      +materialized: table  # analytics/marts models are tables by default
